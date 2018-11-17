@@ -26,11 +26,11 @@ public class ContaService {
 		return this.contaRepository.findAll();
 	}
 	
-	public Optional<Conta> listarPorId(String id){
+	public Optional<Conta> listarPorId(int id){
 		return this.contaRepository.findById(id);
 	}
 	
-	public void deletarConta(String id) {
+	public void deletarConta(int id) {
 		this.contaRepository.deleteById(id);
 	}
 	

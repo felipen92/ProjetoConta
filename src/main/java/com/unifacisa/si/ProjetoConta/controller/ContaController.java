@@ -34,7 +34,7 @@ public class ContaController {
 	}
 
 	@GetMapping("/{id}")
-	public ResponseEntity<Optional<Conta>> listarPorId(@PathVariable(name = "id") String id){
+	public ResponseEntity<Optional<Conta>> listarPorId(@PathVariable(name = "id") int id){
 		
 		Optional<Conta> conta = contaService.listarPorId(id);
 		
@@ -76,7 +76,7 @@ public class ContaController {
 	}
 	
 	@DeleteMapping("/{id}")
-	public void deletarConta(@PathVariable(name = "id") String id) {
+	public void deletarConta(@PathVariable(name = "id") int id) {
 		
 		this.contaService.deletarConta(id);
 	}

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.unifacisa.si.ProjetoConta.domain.Conta;
 
 @Repository
-public interface ContaRepository extends JpaRepository<Conta, String> {
+public interface ContaRepository extends JpaRepository<Conta, Integer> {
 	
 
 }
